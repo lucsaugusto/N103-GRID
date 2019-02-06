@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "nav nav aside" 
+    "section section aside" 
+    "footer footer footer";
+    grid-auto-rows: 10vh 20vh 50vh 40vh;
+}
+header{
+    grid-area: header;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header a{
+    color: black;
+    font-size: 12pt;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header a:nth-child(4){
+    font-size: 12pt;
+    color: green;
+}
+header a:hover{
+    font-size: 15pt;
+    font-weight: bold;
+    transition: 0.5s;
+}
+nav{
+    grid-area: nav;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    color: red;
+    font-size: 25pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+aside{
+    grid-area: aside;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+aside p{
+    width: 150px;
+    color: white;
+    font-size: 12pt;
+}
+aside h2{
+    color: white;
+    font-size: 20pt;
+}
+section{
+    grid-area: section;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section img{
+    width: 400px;
+    height: 250px;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div{
+    width: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer img{
+    width: 40px;
+    height: auto;
+}
